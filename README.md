@@ -31,8 +31,8 @@ Le moteur du jeu suit quatre règles fondamentales appliquées simultanément à
 # 🚦 Run le Projet :
 Pour lancer la simulation sur votre machine, suivez ces étapes simples :
 
-1. Cloner le repository : `git clone https://github.com/N4at/gameoflife-NathanGrandemange-CDOF3.git`
-2. Accéder au dossier : `cd gameoflife-NathanGrandemange-CDOF3`
+1. Cloner le repository : `git clone https://github.com/N4at/GameofLife.git`
+2. Accéder au dossier : `cd GameofLife`
 3. Installer les dépendances : `npm install`
 4. Lancer le jeu : `node index.js`
 
