@@ -1,45 +1,39 @@
-# Conway's Game of Life!
+# 🧬 Conway's Game of Life
+Bienvenue dans cette simulation d'automate cellulaire imaginée par le mathématicien John Conway. Ce n'est pas un "jeu" au sens traditionnel : c'est un système qui évolue de manière autonome à partir d'une configuration initiale, révélant des comportements d'une complexité fascinante à partir de règles ultra-simples.
 
-# About this game
-Conway's Game of Life is a fascinating cellular automaton imagined by mathematician John Conway. It is a game that doesn't need players but evolves based on its initial setup. Imagine a grid of cells, where each cell can either be alive or dead. Here's how it works:
+# 🎬 Actions
+Bien que ce projet soit basé sur une interface terminal (CLI), l'évolution des cellules crée une véritable danse visuelle. On peut y observer :
 
-# Setup
-You start by placing living cells on the grid. For now, this is done randomly.
+1. Les Structures Stables : Des formes qui ne changent jamais.
+2. Les Oscillateurs : Des motifs qui se répètent en boucle.
+3. La Croissance et le Chaos : Des configurations qui s'étendent indéfiniment ou s'effondrent de manière imprévisible.
 
-# Neighbors matter
-Each cell observes its eight neighbors – the cells surrounding it horizontally, vertically, or diagonally.
+# ✨ Technologies
+Ce projet est construit pour être léger, rapide et exécutable directement dans votre console :
 
-# Rules of life and death
-Birth: A dead cell with exactly three living neighbors comes to life in the next generation.
+Node.js : Pour l'environnement d'exécution.
 
-Survival: A living cell with two or three living neighbors remains alive in the next generation.
+Readline API : Pour gérer les interactions utilisateur en ligne de commande.
 
-Death:
-A living cell with fewer than two living neighbors dies of loneliness.
-A living cell with more than three living neighbors dies due to overcrowding.
+JavaScript : Pour la logique algorithmique des générations.
 
-Next generation:
-After simultaneously applying these rules to each cell on the grid, a new generation is created. This new layout replaces the old one, and the cycle continues.
+# 📍 Le Process
+Le moteur du jeu suit quatre règles fondamentales appliquées simultanément à chaque cellule :
 
-# What can happen
-With each new generation, various outcomes are possible:
+- Naissance : Une cellule morte avec exactement 3 voisines vivantes devient vivante.
 
-Stable patterns: Some configurations reach a stable state where no further changes occur.
+- Survie : Une cellule vivante avec 2 ou 3 voisines vivantes reste en vie.
 
-Oscillation: Certain patterns oscillate between different configurations, repeating themselves cyclically.
+- Solitude : Une cellule vivante avec moins de 2 voisines meurt.
 
-Growth or decay: Other configurations may grow indefinitely, stabilize into a repetitive pattern, or disappear completely.
+- Surpopulation : Une cellule vivante avec plus de 3 voisines meurt.
 
-Despite its simplicity, Conway's Game of Life reveals incredibly complex behaviors. It is used in fields such as computer science and biology.
+# 🚦 Run le Projet :
+Pour lancer la simulation sur votre machine, suivez ces étapes simples :
 
-# How to contribute
+1. Cloner le repository : `git clone https://github.com/N4at/gameoflife-NathanGrandemange-CDOF3.git`
+2. Accéder au dossier : `cd gameoflife-NathanGrandemange-CDOF3`
+3. Installer les dépendances : `npm install`
+4. Lancer le jeu : `node index.js`
 
-Would you like to contribute to this project? Here's how:
-
-1. Clone the GitHub repository.
-
-2. Make your changes or improve the existing code.
-
-3. Submit a pull request clearly describing your contributions.
-
-Feel free to report bugs or suggest new ideas to enhance this project. Any contribution is welcome!
+Une fois lancé, suivez les instructions dans votre terminal pour configurer votre grille et regarder la vie s'épanouir..... ou mourir !
